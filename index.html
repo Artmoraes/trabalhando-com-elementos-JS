@@ -32,7 +32,7 @@
       .main-content .left-content {
         background-color: green;
         width: 60%;
-        margin-left: 0;
+        margin-left: auto;
         margin-right: auto;
       }
 
@@ -47,7 +47,7 @@
         background-color: blue;
         width: 60%;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: auto;
       }
 
       .main-content .description {
@@ -56,7 +56,7 @@
     </style>
   </head>
   <body>
-    <h1>Exercício 5.2 - JavaScript DOM</h1>
+    <h1 class="title">Exercício 5.2 - JavaScript DOM</h1>
     <main class='main-content'>
       <section class="center-content">
         <p></p>
@@ -64,7 +64,7 @@
       <section class="left-content">       
         <img src="https://picsum.photos/200" class="small-image">
       </section>
-      <section class="right-content">
+      <section class="right-content" margin-right: auto>
         <ul>
           <li>1</li>
           <li>2</li>
@@ -78,12 +78,14 @@
           <li>0</li>
         </ul>
       </section>
-      <h3>Olá, Mundo!</h3>
-      <h3>Hello World!</h3>
-      <h3>헬로월드!</h3>
+      <h3 class="description">Olá, Mundo!</h3>
+      <h3 class="description">Hello World!</h3>
+      <h3 class="description">헬로월드!</h3>
     </main>
     <script>
-        
+      let lc = document.querySelector("left-content");
+        lc.parentNode.removeChild(lc);
+        document.style.backgroundColor = green;
       // COLOQUE SEU CÓDIGO AQUI
     </script>
   </body>
