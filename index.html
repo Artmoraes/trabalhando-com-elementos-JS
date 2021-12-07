@@ -59,12 +59,12 @@
     <h1 class="title">Exercício 5.2 - JavaScript DOM</h1>
     <main class='main-content'>
       <section class="center-content">
-        <p></p>
+        <p>Olá</p>
       </section>
       <section class="left-content">       
         <img src="https://picsum.photos/200" class="small-image">
       </section>
-      <section class="right-content" margin-right: auto>
+      <section class="right-content">
         <ul>
           <li>1</li>
           <li>2</li>
@@ -83,9 +83,9 @@
       <h3 class="description">헬로월드!</h3>
     </main>
     <script>
-      let lc = document.querySelector("left-content");
-        lc.parentNode.removeChild(lc);
-        document.style.backgroundColor = green;
+      let leftContent = document.getElementsByClassName("right-content");
+      leftContent.parentNode.remove(leftContent);
+      let center = document.querySelector("center-content");
       // COLOQUE SEU CÓDIGO AQUI
     </script>
   </body>
